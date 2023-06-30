@@ -12,9 +12,39 @@
 </head>
 
 <body>
+  <!--modal-->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Faça seu login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="" class="form-label">email</label>
+            <input type="email" class="form-control" name="" id="" placeholder="caravan@hotmail.com">
+            <label for="" class="form-label">Senha</label>
+            <input type="password" class="form-control" name="" id="" placeholder="">
+
+            <button type="button" class="btn btn-primary mt-2">Entrar</button>
+
+            <div class="mb-3 mt-2">
+              <small class="form-text text-muted">esqueceu a senha?</small>
+              <a href="">clique aqui</a>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <nav class="navbar  navbar-expand-md  navbar-light bg-light fixed-top py-3 box-shadow ">
     <a href="index.html" class="navbar-brand ms-md-3">
-      <img src="img/caravan.svg" alt="logo">
+      <img src="/bootstrap-teste/img/caravan.svg" alt="logo">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -36,7 +66,7 @@
           <a class="nav-link" href="contato.html">Contato</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
+          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</a>
         </li>
 
         <li class="nav-item">
@@ -183,7 +213,7 @@
       <h2 class="display-4 text-primary">Perguntas Frequentes</h2>
     </div>
     <div class="row justify-content-center">
-      <div class="col-md-6" id="perguntasFrequentes">
+      <div class="col-lg-6" id="perguntasFrequentes">
         <div class="pergunta py-2 border-bottom">
           <a class="lead text-decoration-none" data-bs-toggle="collapse" href="#pergunta1" aria-expanded="true" aria-controls="pergunta1">→ É possível cancelar a viagem?</a>
           <div id="pergunta1" class="collapse show" data-bs-parent="#perguntasFrequentes" role="tabpanel">
