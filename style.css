@@ -1,3 +1,26 @@
+h1,
+h2,
+h4,
+.text-primary {
+  color: #8844ee !important;
+}
+
+.bg-primary {
+  background-color: #8844ee !important;
+}
+
+.text-secondary {
+  color: #f7f7f7 !important;
+}
+
+.bg-secondary {
+  background-color: #f7f7f7 !important;
+}
+
+.text-tertiary {
+  color: #f7f7f7 !important;
+}
+
 body {
   padding-top: 75px;
 }
